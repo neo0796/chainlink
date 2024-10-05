@@ -15,7 +15,7 @@ declare global {
 const Navbar = () => {
   const [isConnected, setIsConnected] = useState(false);
   const [account, setAccount] = useState<string | null>(null);
-  const [balance, setBalance] = useState<string>('0 CL'); // Set initial balance
+  const [balance, setBalance] = useState<string>('0 CA'); // Set initial balance
   const logoRef = useRef<HTMLDivElement>(null); // Ref for logo animation
 
   useEffect(() => {
@@ -35,7 +35,7 @@ const Navbar = () => {
         console.log('Connected account:', accounts[0]);
 
         // Fetch the balance here (for example purposes, set to 15 DC)
-        setBalance('15 CL'); // Replace this with your logic to fetch balance
+        setBalance('15 CA'); // Replace this with your logic to fetch balance
       } catch (error) {
         console.error("User denied wallet connection or another error occurred:", error);
       }

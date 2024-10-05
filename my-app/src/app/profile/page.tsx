@@ -6,7 +6,7 @@ import { useState } from 'react';
 const ProfilePageDC: React.FC = () => {
   const searchParams = useSearchParams();
   const account = searchParams.get('account');
-  const balance = searchParams.get('balance') || '15 CL'; // Fallback to '0 DC' if balance is not provided
+  const balance = searchParams.get('balance') || '15 CA'; // Fallback to '0 DC' if balance is not provided
 
   const demoName = "User123"; // Placeholder for the user's name
   const [showModal, setShowModal] = useState<boolean>(false);
